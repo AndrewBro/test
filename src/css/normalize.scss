@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+* {
+  margin:0;
+  padding:0;
+}
+
+ul, p, h1, h2, h3, h4, h5, h6, form {
+  margin: 0 0 14px;
+}
+
+html, body, div, span, p, a, img,
+h1, h2, h3, h4, h5, h6, ul, li, legend, form, footer, header, menu, nav, section {
+  border: 0;
+  background: none;
+}
+
+body {
+  color:#333;
+  font: 12px/1.2 MuseoSansCyrl, Arial, Helvetica, sans-serif;
+  background: #fff;
+  overflow-y: scroll;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:none;
+}
+
+aside, footer, header, main, nav, section {
+  display: block;
+}
+
+a {
+  text-decoration: underline;
+  color: #000;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  font: 100% MuseoSansCyrl, Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+  color: #000;
+}
+
+input[type="email"] {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+button,
+html input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+ul {
+  margin-left: 1px;
+}
+
+ul > li {
+  list-style-type: disc;
+  list-style: none;
+}
