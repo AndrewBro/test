@@ -21,9 +21,10 @@ h1, h2, h3, h4, h5, h6, ul, li, legend, form, footer, header, menu, nav, section
 
 body {
   color:#333;
-  font: 12px/1.2 MuseoSansCyrl, Arial, Helvetica, sans-serif;
+  // font: 12px/1.2 MuseoSansCyrl, Arial, Helvetica, sans-serif;
+  font: 12px/1.2 Arial, Helvetica, sans-serif;
   background: #fff;
-  overflow-y: scroll;
+  overflow-x: hidden;
   -webkit-text-size-adjust:100%;
   -ms-text-size-adjust:none;
 }

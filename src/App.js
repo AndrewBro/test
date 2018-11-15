@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from "./components/banner/Banner";
+import Gallery from "./components/gallery/Gallery";
 import './css/main.scss';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <Banner/>
+        <Gallery/>
       </div>
     );
   }
