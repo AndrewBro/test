@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -21,12 +22,15 @@ h1, h2, h3, h4, h5, h6, ul, li, legend, form, footer, header, menu, nav, section
 
 body {
   color:#333;
-  // font: 12px/1.2 MuseoSansCyrl, Arial, Helvetica, sans-serif;
-  font: 12px/1.2 Arial, Helvetica, sans-serif;
+  font: 12px/1.2 MuseoSansCyrl-300, Helvetica, sans-serif;
   background: #fff;
   overflow-x: hidden;
-  -webkit-text-size-adjust:100%;
-  -ms-text-size-adjust:none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 aside, footer, header, main, nav, section {

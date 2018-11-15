@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Menu from "./Menu/Menu";
 import './banner.scss';
 import layers from "./../../images/layers.svg";
 import clock from "./../../images/clock.svg";
@@ -11,25 +12,20 @@ class Banner extends Component {
   render() {
     return (
       <section className="banner">
-        <img src={banner} alt="banner" className='banner-img'/>
+        <img src={banner} alt="banner" className='banner-img' />
         <div className="banner-content">
 
           <div className="banner-header">
             <div className="banner-nav">
               <a href="#" className="banner-logo">
-                <img src={layers} alt="logo"/>
+                <img src={layers} alt="logo" />
               </a>
-              <nav className="navigation">
-                <a href="#">About Us</a>
-                <a href="#">Company</a>
-                <a href="#">Careers</a>
-                <a href="#">Contacts</a>
-              </nav>
+              <Menu />
             </div>
             <div className="banner-auth">
               <button className="banner-auth-button">Log in</button>
               <button className="banner-auth-button">sing up</button>
-            </div>  
+            </div>
           </div>
 
           <div className="banner-title">
@@ -40,19 +36,19 @@ class Banner extends Component {
           <div className="banner-options">
             <ul className="banner-options-list">
               <li>
-                <img src={clock} alt=""/>
+                <img src={clock} alt="" />
                 <span>The Skinny On Lcd Monitors</span>
               </li>
               <li>
-                <img src={star} alt=""/>
+                <img src={star} alt="" />
                 <span>Guidelines For Inkjet Cartridge Refill</span>
               </li>
               <li>
-                <img src={musicPlayer} alt=""/>
+                <img src={musicPlayer} alt="" />
                 <span>Do A Sporting Stag Do In Birmingham</span>
               </li>
               <li>
-                <img src={house} alt=""/>
+                <img src={house} alt="" />
                 <span>Your Computer Usage </span>
               </li>
             </ul>
