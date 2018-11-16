@@ -3,6 +3,10 @@ import {
   FETCH_POSTS_FAIL,
   FETCH_POSTS_SUCCESS,
 } from "./../actions/fetchPostsAction";
+import {
+  FETCH_MOREPOSTS_SUCCESS
+} from "./../actions/fetchMorePostsAction";
+
 import initialState from './../initialState';
 
 const postsReducer = function (state = initialState.posts, action) {
@@ -22,6 +26,11 @@ const postsReducer = function (state = initialState.posts, action) {
       return {
         ...state,
         isLoadedPosts: true
+      };
+    case FETCH_MOREPOSTS_SUCCESS:      
+      return {
+        ...state.morePosts,
+        // isLoadedPosts: false,
       };
     default:
       return state;

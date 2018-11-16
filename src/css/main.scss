@@ -1,14 +1,23 @@
 @import './normalize.scss';
 @import './variables.scss';
-// @import './../components/banner/banner.scss';
-// @import './../components/gallery/gallery.scss';
 
 
+// Global styles for all components
 .section-title {
   font-size: $font-x-large;
-  font-family: $font-bold;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 47px;
+}
+
+.button {
+  border: 2px solid $separator-border;
+  background: $white;
+  font-size: $font-xx-small;
+  line-height: 1.4;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  z-index: 1;
 }

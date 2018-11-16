@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { fetchPostsAction } from './../../../store/actions/fetchPostsAction';
+import { fetchPostsAction } from '../../../store/actions/fetchPostsAction';
 
 class Posts extends Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class Posts extends Component {
       <Fragment>
         {          
           this.props.posts.isLoadedPosts ?
-            <ul className='gallery-list'>
+            <ul className='news-list'>
               {
                 posts && posts.map(post => {
                   return (

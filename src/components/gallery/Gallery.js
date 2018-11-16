@@ -1,51 +1,32 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
-// import { fetchPostsAction } from './../../store/actions/fetchPostsAction';
-import Posts from "./posts/Posts";
 import './gallery.scss';
 
 class Gallery extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLoading: false
-    };
-  }
-
   morePosts = () => {
-    // this.props.fetchPostsAction();
+    this.props.fetchMorePostsAction();
+    console.log(this.props);
   }
 
   render() {
     return (
       <section className='gallery'>
-        <h2 className='gallery-title section-title'>Latest news</h2>
+        <h2 className='gallery-title section-title'>Inside company</h2>
 
-        <Posts more='' />
-
-        <div className="more-posts">
-          <button onClick={this.morePosts}>
-            More News</button>
-        </div>
       </section>
     );
   }
 }
 
 
-
+export default Gallery;
 // const mapStateToProps = store => {
-//   console.log('STORE', store);
-  
 //   return {
 //     posts: store.posts
 //   }
 // };
 
 // const mapDispatchToProps = dispatch => ({
-//   fetchPostsAction: posts => dispatch(fetchPostsAction(posts))
+//   fetchMorePostsAction: morePosts => dispatch(fetchMorePostsAction(morePosts))
 // });
 
 // export default connect(mapStateToProps, mapDispatchToProps)(Gallery);
-
-export default Gallery;

@@ -5,7 +5,6 @@
   max-height: 670px;
   height: 100vh;
   min-height: 470px;
-  display: none;
 
   &-img {
     position: absolute;
@@ -126,10 +125,11 @@
 
   h1 {
       font-size: $font-large;
-      font-family: $font-bold;
       text-transform: uppercase;
-      letter-spacing: 1px;
       margin-bottom: 7px;
+      letter-spacing: 1px;
+      font-weight: 700; // ??
+      letter-spacing: -.8px; // ??
   }
 
   h3 {
