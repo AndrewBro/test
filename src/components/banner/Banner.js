@@ -17,7 +17,7 @@ class Banner extends Component {
 
           <div className="banner-header">
             <div className="banner-nav">
-              <a href="#" className="banner-logo">
+              <a href="https://www.google.com.ua" className="banner-logo">
                 <img src={layers} alt="logo" />
               </a>
               <Menu />

@@ -5,6 +5,7 @@
   max-height: 670px;
   height: 100vh;
   min-height: 470px;
+  display: none;
 
   &-img {
     position: absolute;
@@ -74,7 +75,6 @@
           text-decoration: underline;
         }
       }
-
       @media (max-width: $large) {
         a {
           font-size: calc(#{$font-x-small} / 1.25);
@@ -117,12 +117,6 @@
         min-width: 80px;
       }
     }
-    // @media (max-width: $medium) {
-    //   button {
-    //     font-size: calc(#{$font-x-small} / 1.25);
-    //     padding: .75em 1em;
-    //   }
-    // }
   }
 }
 
@@ -162,7 +156,6 @@
       color: $white;
       text-align: center;
       font-size: $font-small;
-      font-weight: 500; // ??
       line-height: 1.4
     }
   }

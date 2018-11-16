@@ -11,10 +11,10 @@ class Menu extends Component {
           <span></span>
           <span></span>
           <ul id="menu" className="navigation">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="https://www.google.com.ua">About Us</a></li>
+            <li><a href="https://www.google.com.ua">Company</a></li>
+            <li><a href="https://www.google.com.ua">Careers</a></li>
+            <li><a href="https://www.google.com.ua">Contacts</a></li>
           </ul>
         </div>
       </nav>
