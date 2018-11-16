@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Banner from "./components/banner/Banner";
 import News from "./components/news/News";
-import Gallery from "./components/gallery/Gallery";
+import Colage from "./components/colage/Colage";
+import Vacancy from "./components/vacancy/Vacancy";
 import './css/main.scss';
 
 class App extends Component {
@@ -10,7 +11,8 @@ class App extends Component {
       <div className="App">
         <Banner/>
         <News/>
-        <Gallery/>
+        <Colage/>
+        <Vacancy/>
       </div>
     );
   }

@@ -1,0 +1,87 @@
+@import './../../css/variables.scss';
+
+.vacancy {
+  max-width: calc(#{$large} + 60px);
+  margin: 0 auto;
+  padding: 50px 0 200px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    li {
+      width: calc(50% - 40px);
+      margin: 0 1em 2em;
+
+      a {
+        border: 2px solid $vacancies-bg;
+        background: $vacancies-bg;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 25px 30px;
+        text-decoration: none;
+        transition: .5s;
+
+        &:hover {
+          animation: shake .4s cubic-bezier(.36,.07,.19,.97) both;
+          transform: translate3d(0, 0, 0);
+          backface-visibility: hidden;
+          perspective: 1000px;
+          border: 2px solid #ccc;
+          background: $white;
+          cursor: pointer;
+        }
+        
+        @keyframes shake {
+          10% {
+            transform: translate3d(10px, 0, 0);
+          }
+          
+          30% {
+            transform: translate3d(0, 2px, 0);
+          }
+        
+          50% {
+            transform: translate3d(0, -2px, 0);
+          }
+        
+          90% {
+            transform: translate3d(1px, 0, 0);
+          }
+        }
+
+      }
+    }
+  }
+
+  img {
+    max-width: 55px;
+    max-height: 55px;
+    background: #000;
+    margin-right: 4em;
+  }
+  
+  &-desc {
+    span {
+      font-size: $font-xx-small;
+      color: $grey;
+      margin-bottom: 5px;
+      display: inline-block;
+      line-height: 1.4;
+    }
+
+    h5 {
+      font-size: $font-x-medium;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    p {
+      font-size: $font-x-small;
+      color: $grey;
+      margin-bottom: 0;
+    }
+  }
+}

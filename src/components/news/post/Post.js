@@ -15,7 +15,9 @@ class Posts extends Component {
   }
 
   render() {
-    const { posts } = this.props.posts;   
+    const { posts } = this.props.posts;
+    // const fakeImage = `https://picsum.photos/200/300/?random`;
+    const fakeImage = `https://picsum.photos/400/300/`;
 
     return (
       <Fragment>
@@ -28,7 +30,7 @@ class Posts extends Component {
                     <li key={post.id}>
                       <a href='hmttps://www.google.com' className='post-link'>
                         <div className='post-image'>
-                          <img src='https://picsum.photos/400/300/' alt='post' />
+                          <img src={fakeImage} alt='post' />
                         </div>
                         <div className='post-title'>{post.title}</div>
                         <div className='post-description'>{post.body}</div>

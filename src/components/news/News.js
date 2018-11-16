@@ -15,7 +15,7 @@ class News extends Component {
       <section className='news'>
         <h2 className='news-title section-title'>Latest news</h2>
         <Posts />
-        <div className="more-posts">
+        <div className="more-posts more">
           <button onClick={this.morePosts}
             className="button">
             More News</button>

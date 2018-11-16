@@ -1,0 +1,28 @@
+.colage {
+  padding: 65px 0;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    li {
+      max-width: calc(100% / 9);
+      flex-grow: 1;
+
+      &:nth-child(3n) {
+        // max-width: 50%;
+      }
+
+      img {
+        padding: 1px;
+        width: 100%;
+        min-height: 180px;
+        min-width: 180px;
+        max-height: 360px;
+        max-width: 360px;
+      }
+    }
+  }
+}

@@ -21,3 +21,21 @@
   padding: 10px 40px;
   z-index: 1;
 }
+
+.more {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    right: -100%;
+    left: -100%;
+    transform: translateY(50%);
+    z-index: 0;
+    height: 1px;
+    background: #ccc;
+  }
+}

@@ -63,23 +63,6 @@
       font-weight: 200;
     }
   }
-
-  .more-posts {
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 50%;
-      right: -100%;
-      left: -100%;
-      border-bottom: 1px solid #ccc;
-      transform: translateY(50%);
-      z-index: 0;
-    }
-  }
 }
 
 @media (max-width: $breack-large) {
