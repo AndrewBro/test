@@ -34,7 +34,9 @@ class Colage extends Component {
             <li><img src={fakeImage} alt=""/></li>
             <li><img src={fakeImage} alt=""/></li>
           </ul>
-        
+
+
+
       </section>
     );
   }
