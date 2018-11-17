@@ -1,3 +1,5 @@
+@import './../../css/variables.scss';
+
 .colage {
   padding: 65px 0;
 
@@ -5,6 +7,26 @@
     width: 100%;
     display: grid;
     grid-gap: 2px;
+    grid-template-rows: repeat(2, 150px);
+
+    @media (max-width: $breack-medium) {
+      & {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 150px);
+      }
+    }
+    @media (max-width: $breack-small) {
+      & {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 50%);
+      }
+    }
+    @media (max-width: 500px) {
+      & {
+        display: block;
+        width: 100%;
+      }
+    }
   }
 
     li {
@@ -18,14 +40,14 @@
         grid-row: 1;
       }
       &:nth-child(2) {
-        -ms-grid-column: 1 ;
-        grid-column: 1 ;
-        -ms-grid-row: 2 ;
-        grid-row: 2 ;
+        -ms-grid-column: 1;
+        grid-column: 1;
+        -ms-grid-row: 2;
+        grid-row: 2;
       }
       &:nth-child(3) {
-        -ms-grid-column: 2 ;
-        grid-column: 2 ;
+        -ms-grid-column: 2;
+        grid-column: 2;
         -ms-grid-row: 2;
         grid-row: 2;
       }
@@ -125,8 +147,23 @@
         grid-row: 1;
       }
 
+      @media (max-width: $breack-medium) {
+        &:nth-child(1n) {
+          -ms-grid-column: auto;
+          grid-column: auto;
+          -ms-grid-row: auto;
+          grid-row: auto;
+        }
+        @media (max-width: 500px) {
+          & {
+            display: block;
+          }
+        }
+      }
+
       img {
         height: 100%;
+        width: 100%;
         object-fit: cover;
       }
     }
