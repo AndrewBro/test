@@ -2,6 +2,10 @@
 @import './variables.scss';
 
 
+.App {
+  overflow: hidden;
+}
+
 // Global styles for all components
 .section-title {
   font-size: $font-x-large;
@@ -31,8 +35,8 @@
     content: '';
     position: absolute;
     bottom: 50%;
-    right: -100%;
-    left: -100%;
+    right: -50%;
+    left: -50%;
     transform: translateY(50%);
     z-index: 0;
     height: 1px;
