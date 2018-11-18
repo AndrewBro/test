@@ -11,7 +11,6 @@ class Collage extends Component {
 
   render() {
     const {collage} = this.props.collage;
-
     let temparray = [];
     for (let i=0; i<collage.length; i+=3) {
       temparray.push(collage.slice(i,i+3))
@@ -20,17 +19,21 @@ class Collage extends Component {
     return (
       <section className='collage'>
         <h2 className='collage-title section-title'>Inside company</h2>
-        <ul className='collage-list'>
+        <div className='collage-list'>
           {
-            temparray.map((el, i) => {
-              return <ul key={el.i} className='collage-wrap'>
-                  <img src={el[0].url} alt='' className='collage-item-1'/>
-                  <img src={el[1].url} alt='' className='collage-item-2'/>
-                  <img src={el[2].url} alt='' className='collage-item-3'/>
-              </ul>
+            temparray.map(el => {
+              return <div key={el.i} className='collage-wrap'>
+                  <div className="collage-item-top">
+                    <img src={el[0].url} alt='' className='collage-item collage-item-1'/>
+                  </div>
+                <div className="collage-item-bottom">
+                  <img src={el[1].url} alt='' className='collage-item collage-item-2'/>
+                  <img src={el[2].url} alt='' className='collage-item collage-item-3'/>
+                </div>
+              </div>
             })
           }
-        </ul>
+        </div>
       </section>
     );
   }
