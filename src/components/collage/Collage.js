@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import connect from "react-redux/es/connect/connect";
 import { fetchCollageAction } from './../../store/actions/fetchCollageAction';
 import './collage.scss';
@@ -21,8 +21,8 @@ class Collage extends Component {
         <h2 className='collage-title section-title'>Inside company</h2>
         <div className='collage-list'>
           {
-            temparray.map(el => {
-              return <div key={el.i} className='collage-wrap'>
+            temparray.map((el, i) => {
+              return <div key={i} className='collage-wrap'>
                   <div className="collage-item-top">
                     <img src={el[0].url} alt='' className='collage-item collage-item-1'/>
                   </div>

@@ -46,7 +46,7 @@ class Footer extends Component {
             <span className='validation-error'>
               {
                 (!this.state.isValid && this.state.touched) ?
-                  `Invalid email` : ''
+                  `Yo! Invalid email` : ``
               }
             </span>
             <input type='text'

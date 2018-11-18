@@ -15,7 +15,6 @@ class News extends Component {
   render() {
     const { posts } = this.props.posts;
     const fakeImage = `https://picsum.photos/200/300/?random`;
-    // const fakeImage = `https://picsum.photos/400/300/`;
 
     return (
       <section className='news'>
@@ -41,11 +40,11 @@ class News extends Component {
               </ul> :
               <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           }
-
         <div className="more-posts more">
           <button onClick={this.morePosts}
             className="button">
-            More News</button>
+            <span>More News </span>
+          </button>
         </div>
       </section>
     );
@@ -55,10 +54,6 @@ class News extends Component {
 const mapStateToProps = store => ({
   posts: store.posts
 });
-// const mapStateToProps = store => {
-//   // console.log('q-> ', store.posts);
-//   return store.posts
-// };
 
 const mapDispatchToProps = dispatch => ({
   fetchPostsAction: posts => dispatch(fetchPostsAction(posts))
