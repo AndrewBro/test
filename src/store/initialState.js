@@ -1,5 +1,6 @@
 const initialState = {
-  posts: []
+  posts: [],
+  collage: []
 };
 
 export default initialState;

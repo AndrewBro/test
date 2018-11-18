@@ -5,17 +5,15 @@ import phoneCall from "./../../images/phone-call.svg";
 import envelope from "./../../images/envelope.svg";
 import placeholder from "./../../images/placeholder.svg";
 import shoppingCart from "./../../images/shopping-cart.svg";
-
 import './vacancy.scss';
 
 class Vacancy extends Component {
   render() {
+    let images = [settings, like, phoneCall, envelope, placeholder, shoppingCart];
+
     return (
       <section className='vacancy'>
         <h2 className='vacancy-title section-title'>Hot vacancies</h2>
-
-
-
         <ul>
           <li>
             <a href="https://www.google.com.ua">

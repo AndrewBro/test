@@ -10,10 +10,10 @@ export const fetchPostsAction = () => (dispatch) => {
     .then(
       res => {
         const posts = res.data;
-        dispatch({ type: 'FETCH_POSTS_SUCCESS', posts });
+        dispatch({ type: FETCH_POSTS_SUCCESS, posts });
       },
       error => {
-        dispatch({ type: 'FETCH_POSTS_FAIL', error });
+        dispatch({ type: FETCH_POSTS_FAIL, error });
         throw error
       }
     )
