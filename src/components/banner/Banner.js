@@ -27,12 +27,10 @@ class Banner extends Component {
               <button className="banner-auth-button">sing up</button>
             </div>
           </div>
-
           <div className="banner-title">
             <h1>Stu Unger Rise And Fall Of A Poker Genius</h1>
             <h3>V7 Digital Photo Printing</h3>
           </div>
-
           <div className="banner-options">
             <ul className="banner-options-list">
               <li>
