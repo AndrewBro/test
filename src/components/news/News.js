@@ -14,7 +14,7 @@ class News extends Component {
 
   render() {
     const { posts } = this.props.posts;
-    const fakeImage = `https://picsum.photos/200/300/?random`;
+    const fakeImage = `https://picsum.photos/200/300/`;
 
     return (
       <section className='news'>
@@ -32,6 +32,10 @@ class News extends Component {
                           </div>
                           <div className='post-title'>{post.title}</div>
                           <div className='post-description'>{post.body}</div>
+
+                          <div className='post-more'>
+                            <a>More</a>  
+                          </div> 
                         </a>
                       </li>
                     )

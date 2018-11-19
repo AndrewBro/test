@@ -23,6 +23,7 @@
       width: calc(33.33% - 40px);
       margin: 0 12.5px 12px;
       justify-content: center;
+      position: relative;
     }
 
     @media (max-width: 768px) {
@@ -40,27 +41,69 @@
   .post {
     &-link {
       text-decoration: none;
+      font-size: $font-medium;
+      
+      &:hover {
+        .post-more {
+          opacity: 1;
+        }
+
+        .post-title,
+        .post-description {
+          opacity: .8;
+          transition: .5s;
+        }
+      }
     }
 
     &-image img {
       width: 100%;
       margin-bottom: 25px;
       max-height: 290px;
+      object-fit: cover;
     }
 
     &-title {
       font-size: $font-medium;
       margin-bottom: 12px;
+      transition: .5s;
 
       &:first-letter {
         text-transform: uppercase;
+      }
+
+      @media (max-width: $breack-large) {
+        & {
+          font-size: .75em;
+        }
       }
     }
 
     &-description {
       font-size: $font-small;
-      margin-bottom: 60px;
+      padding-bottom: 60px;
       font-weight: 200;
+      transition: .5s;
+
+      @media (max-width: $breack-large) {
+        & {
+          font-size: .5em;
+        }
+      }
+    }
+    
+    &-more {
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+      opacity: 0;
+      transition: .3s;
+
+      a {
+        text-decoration: none;
+        color: $grey;
+        font-size: .5em;
+      }
     }
   }
 }
@@ -159,6 +202,7 @@
     left: 10px;
   }
 }
+
 @keyframes lds-roller {
   0% {
     transform: rotate(0deg);
