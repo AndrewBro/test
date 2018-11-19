@@ -1,7 +1,7 @@
 import axios from 'axios';
-export const FETCH_POSTS = "FETCH_POSTS";
-export const FETCH_POSTS_SUCCESS = "FETCH_POSTS_SUCCESS";
-export const FETCH_POSTS_FAIL = "FETCH_POSTS_FAIL";
+export const FETCH_POSTS = 'FETCH_POSTS';
+export const FETCH_POSTS_SUCCESS = 'FETCH_POSTS_SUCCESS';
+export const FETCH_POSTS_FAIL = 'FETCH_POSTS_FAIL';
 
 export const fetchPostsAction = () => (dispatch) => {
   dispatch({ type: FETCH_POSTS });

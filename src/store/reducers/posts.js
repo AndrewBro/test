@@ -2,10 +2,7 @@ import {
   FETCH_POSTS,
   FETCH_POSTS_FAIL,
   FETCH_POSTS_SUCCESS,
-} from "./../actions/fetchPostsAction";
-// import {
-//   FETCH_MOREPOSTS_SUCCESS
-// } from "./../actions/fetchCollageAction";
+} from './../actions/fetchPostsAction';
 
 import initialState from './../initialState';
 
@@ -32,6 +29,5 @@ const postsReducer = function (state = initialState, action) {
       return state;
   }
 };
-
 
 export default postsReducer;

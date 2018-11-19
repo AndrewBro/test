@@ -57,7 +57,7 @@ input {
   appearance: none;
 }
 
-input[type="email"] {
+input[type='email'] {
   margin: 0;
   -webkit-appearance: none;
 }
@@ -73,8 +73,8 @@ input::-moz-focus-inner {
 }
 
 button,
-html input[type="button"],
-input[type="submit"] {
+html input[type='button'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer;
 }

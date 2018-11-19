@@ -2,7 +2,7 @@ import {
   FETCH_COLLAGE,
   FETCH_COLLAGE_SUCCESS,
   FETCH_COLLAGE_FAIL
-} from "../actions/fetchCollageAction";
+} from '../actions/fetchCollageAction';
 
 import initialState from './../initialState';
 
