@@ -24,7 +24,7 @@
   }
 
   &-wrap {
-    padding: 7em 2.5em 10em;
+    padding: 6em 2.5em 9em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,9 @@
   &-title {
     font-size: $font-large;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    letter-spacing: -1.8px;
+    font-weight: 500;
 
     @media (max-width: $breack-large) {
       & {
@@ -47,7 +49,7 @@
 
   &-description {
     font-size: $font-small;
-    margin-bottom: 2.5em;
+    margin-bottom: 2.2em;
 
     @media (max-width: $breack-small) {
       & {

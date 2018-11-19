@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Menu from './Menu/Menu';
+import Burger from './burger/Burger';
 import './banner.scss';
 import layers from './../../images/layers.svg';
 import clock from './../../images/clock.svg';
@@ -20,7 +20,7 @@ class Banner extends Component {
               <a href='https://www.google.com.ua' className='banner-logo'>
                 <img src={layers} alt='logo' />
               </a>
-              <Menu />
+              <Burger />
             </div>
             <div className='banner-auth'>
               <button className='banner-auth-button'>Log in</button>

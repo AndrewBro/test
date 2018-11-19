@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import settings from "./../../images/settings.svg";
-import like from "./../../images/like.svg";
-import phoneCall from "./../../images/phone-call.svg";
-import envelope from "./../../images/envelope.svg";
-import placeholder from "./../../images/placeholder.svg";
-import shoppingCart from "./../../images/shopping-cart.svg";
-import {fetchVacanciesAction} from "../../store/actions/fetchVacanciesAction";
-import connect from "react-redux/es/connect/connect";
+import settings from './../../images/settings.svg';
+import like from './../../images/like.svg';
+import phoneCall from './../../images/phone-call.svg';
+import envelope from './../../images/envelope.svg';
+import placeholder from './../../images/placeholder.svg';
+import shoppingCart from './../../images/shopping-cart.svg';
+import {fetchVacanciesAction} from '../../store/actions/fetchVacanciesAction';
+import connect from 'react-redux/es/connect/connect';
 import './vacancy.scss';
 
 
@@ -32,14 +32,14 @@ class Vacancy extends Component {
       <section className='vacancy'>
         <h2 className='vacancy-title section-title'>Hot vacancies</h2>
 
-        <ul className='news-list'>
+        <ul className='vacancy-list'>
           {
             vacancies.map((item, i) => {
               return (
                 <li key={i}>
-                  <a href="https://www.google.com.ua">
+                  <a href='https://www.google.com.ua'>
                     <img src={item.icon} alt='' />
-                    <div className="vacancy-desc">
+                    <div className='vacancy-desc'>
                       <span>{item.name}</span>
                       <h5>{item.body}</h5>
                       <p>{item.email}</p>
@@ -51,9 +51,9 @@ class Vacancy extends Component {
           }
         </ul>
 
-        <div className="more-vacancy more">
+        <div className='more-vacancy more'>
           <button onClick={this.moreVacanies}
-            className="button">
+            className='button'>
             <span>More Vacancies </span>
           </button>
         </div>
