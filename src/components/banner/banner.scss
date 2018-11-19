@@ -110,6 +110,7 @@
         transition: .4s;
       }
     }
+
     @media (max-width: $breack-large) {
       button {
         font-size: calc(#{$font-x-small} / 1.25);
@@ -117,12 +118,6 @@
         min-width: 80px;
       }
     }
-    // @media (max-width: $medium) {
-    //   button {
-    //     font-size: calc(#{$font-x-small} / 1.25);
-    //     padding: .75em 1em;
-    //   }
-    // }
   }
 }
 
@@ -132,15 +127,14 @@
 
   h1 {
       font-size: $font-large;
-      font-family: $font-bold;
       text-transform: uppercase;
-      letter-spacing: 1px;
       margin-bottom: 7px;
+      font-weight: 700;
+      letter-spacing: -.8px;
   }
 
   h3 {
     font-size: $font-medium;
-    font-size: 24px;
     letter-spacing: 3.7px;
     text-transform: uppercase;
   }
@@ -149,7 +143,6 @@
 .banner-options {
   ul {
     display: flex;
-    justify-content: center;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 893px;
@@ -162,10 +155,10 @@
       color: $white;
       text-align: center;
       font-size: $font-small;
-      font-weight: 500; // ??
       line-height: 1.4
     }
   }
+
   @media (max-width: $breack-large) {
     ul {
       max-width: 500px;
@@ -176,11 +169,13 @@
     width: 85px;
     margin: 0 auto 20px;
   }
+
   @media (max-width: $breack-large) {
     img {
       max-width: 50px;
     }
   }
+
   @media (max-width: $breack-medium) {
     img {
       max-width: 25px;
@@ -191,18 +186,19 @@
     max-width: 190px;
     margin: 0 auto;
   }
+
   @media (max-width: $breack-large) {
     span {
       font-size: .75em
     }
   }
+
   @media (max-width: $breack-medium) {
     span {
       font-size: .6em
     }
   }
 }
-
 
 @media (max-width: $breack-large) {
   .banner-content {

@@ -1,0 +1,139 @@
+@import './../../css/variables.scss';
+
+.vacancy {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 200px;
+  width: 100%;
+  max-width: $large;
+  transition: 1s;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      width: calc(50% - 2em);
+      margin: 0 1em 2em;
+
+      a {
+        border: 2px solid $vacancies-bg;
+        background: $vacancies-bg;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 25px 30px;
+        text-decoration: none;
+        transition: .5s;
+        height: 100%;
+
+        &:hover {
+          animation: shake .4s cubic-bezier(.36,.07,.19,.97) both;
+          transform: translate3d(0, 0, 0);
+          backface-visibility: hidden;
+          perspective: 1000px;
+          border: 2px solid #ccc;
+          background: $white;
+          cursor: pointer;
+        }
+        
+        @keyframes shake {
+          10% {
+            transform: translate3d(10px, 0, 0);
+          }
+          
+          30% {
+            transform: translate3d(0, 2px, 0);
+          }
+        
+          50% {
+            transform: translate3d(0, -2px, 0);
+          }
+        
+          90% {
+            transform: translate3d(1px, 0, 0);
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    max-width: 55px;
+    max-height: 55px;
+    margin-right: 4em;
+  }
+  
+  &-desc {
+    span {
+      font-size: $font-xx-small;
+      color: $grey;
+      margin-bottom: 5px;
+      display: inline-block;
+      line-height: 1.4;
+    }
+
+    h5 {
+      font-size: $font-x-medium;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    p {
+      font-size: $font-x-small;
+      color: $grey;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+@media (max-width: $breack-large) {
+  .vacancy {
+    max-width: $medium;
+  }
+}
+
+@media (max-width: $medium) {
+  .vacancy {
+    max-width: $small;
+
+    ul {
+      padding: 0 2em;
+
+      li {
+        width: 100%;
+        margin: 0 0 2em;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .vacancy {
+    img {
+      margin: 0 0 3em;
+    }
+
+    ul {
+      li {
+        a {
+          flex-direction: column;
+        }
+      }
+    }
+
+    &-desc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      & span, h5, p {
+        margin-bottom: .5em;
+      }
+    }
+  }
+}

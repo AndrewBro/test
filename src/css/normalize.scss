@@ -52,11 +52,18 @@ input {
   font: 100% MuseoSansCyrl, Arial, Helvetica, sans-serif;
   vertical-align: middle;
   color: #000;
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input[type="email"] {
   margin: 0;
   -webkit-appearance: none;
+}
+
+button:focus {
+  outline: 1px solid #ccc;
 }
 
 button::-moz-focus-inner,
