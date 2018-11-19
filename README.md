@@ -1,14 +1,17 @@
 
 
 
-## Test work for Plarium 
+# Test work for Plarium 
 
 Install dependencies:  
-### `npm install`
+```sh
+$ npm install
+```
 
 Start dev server:  
-### `npm start`
-
+```sh
+$ npm start
+```
 
 git repo
 https://github.com/AndrewBro/test
