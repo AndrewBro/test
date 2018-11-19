@@ -113,6 +113,15 @@
     bottom: -15px;
     left: 10px;
     font-size: $font-x-small;
+
+    @media (max-width: $breack-small) {
+      & {
+        left: auto;
+        font-size: 16px;
+        top: -23px;
+        right: 5px;
+      }
+    }
   }
 }
 

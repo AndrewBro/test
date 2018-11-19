@@ -46,8 +46,10 @@
   }
   
   &-desc {
+    font-size: $font-x-medium;
+
     span {
-      font-size: $font-xx-small;
+      font-size: .75em;
       color: $grey;
       margin-bottom: 5px;
       display: inline-block;
@@ -55,13 +57,12 @@
     }
 
     h5 {
-      font-size: $font-x-medium;
       font-weight: 500;
       margin-bottom: 2px;
     }
 
     p {
-      font-size: $font-x-small;
+      font-size: .75em;
       color: $grey;
       margin-bottom: 0;
     }

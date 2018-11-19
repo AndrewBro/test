@@ -42,15 +42,17 @@
     &-link {
       text-decoration: none;
       font-size: $font-medium;
+      display: block;
       
       &:hover {
+        transition: .5s;
+
         .post-more {
           opacity: 1;
         }
 
-        .post-title,
-        .post-description {
-          opacity: .8;
+        .post-description,
+        .post-title {
           transition: .5s;
         }
       }
@@ -215,9 +217,9 @@
 // small animation
 @keyframes slidein {
   0%   {opacity: 0}
-  15%  {opacity: .2}
-  30%  {opacity: .3}
-  55%  {opacity: .6}
+  35%  {opacity: .2}
+  60%  {opacity: .3}
+  85%  {opacity: .6}
   100% {opacity: 1}
 }
 
