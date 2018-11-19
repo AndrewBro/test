@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Banner from "./components/banner/Banner";
-import Gallery from "./components/gallery/Gallery";
+import News from "./components/news/News";
+import Collage from "./components/collage/Collage";
+import Vacancy from "./components/vacancy/Vacancy";
+import Footer from "./components/footer/Footer";
 import './css/main.scss';
 
 class App extends Component {
@@ -8,7 +11,10 @@ class App extends Component {
     return (
       <div className="App">
         <Banner/>
-        <Gallery/>
+        <News/>
+        <Collage/>
+        <Vacancy/>
+        <Footer/>
       </div>
     );
   }
