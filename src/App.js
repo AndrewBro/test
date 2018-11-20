@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import 'core-js/fn/array/find';
+import 'core-js/fn/array/includes';
+import 'core-js/fn/number/is-nan';
 import Banner from "./components/banner/Banner";
 import News from "./components/news/News";
 import Collage from "./components/collage/Collage";

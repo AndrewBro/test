@@ -15,10 +15,11 @@
   }
 
   &-wrap {
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 2px);
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100vh;
     max-height: 520px;
     
@@ -40,7 +41,8 @@
 
     @media (max-width: 1600px) {
       & {
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 2px);
+        margin: 0 auto;
       }
     }
     @media (max-width: $breack-small) {

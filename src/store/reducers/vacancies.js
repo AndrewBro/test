@@ -5,7 +5,7 @@ import {
 } from '../actions/fetchVacanciesAction';
 import initialState from './../initialState';
 
-const vacanciesReducer = function (state = initialState, action) {
+const vacanciesReducer = function (state = initialState.vacancies, action) {
   switch (action.type) {
     case FETCH_VACANCIES:
       return {

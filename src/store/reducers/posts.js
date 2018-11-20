@@ -6,7 +6,7 @@ import {
 
 import initialState from './../initialState';
 
-const postsReducer = function (state = initialState, action) {
+const postsReducer = function (state = initialState.posts, action) {
   switch (action.type) {
     case FETCH_POSTS:
       return {

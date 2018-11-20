@@ -28,7 +28,7 @@ class Collage extends Component {
           <h2 className='collage-title section-title'>Inside company</h2>
           <div className='collage-list'>
             {
-              temparray.map((el, i) => {
+              sortedCollage.map((el, i) => {
                 return <div key={i} className='collage-wrap'>
                     <div className="collage-item-top">
                       <img src={el[0].url} alt='' className='collage-item collage-item-1'/>

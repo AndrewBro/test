@@ -31,7 +31,6 @@ class Vacancy extends Component {
     return (
       <section className='vacancy'>
         <h2 className='vacancy-title section-title'>Hot vacancies</h2>
-
         <ul className='vacancy-list'>
           {
             vacancies.map((item, i) => {

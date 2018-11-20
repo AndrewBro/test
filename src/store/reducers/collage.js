@@ -6,7 +6,7 @@ import {
 
 import initialState from './../initialState';
 
-const collageReducer = function (state = initialState, action) {
+const collageReducer = function (state = initialState.collage, action) {
   switch (action.type) {
     case FETCH_COLLAGE:
       return {
