@@ -2,8 +2,7 @@ import {
   FETCH_VACANCIES,
   FETCH_VACANCIES_SUCCESS,
   FETCH_VACANCIES_FAIL
-} from "../actions/fetchVacanciesAction";
-
+} from '../actions/fetchVacanciesAction';
 import initialState from './../initialState';
 
 const vacanciesReducer = function (state = initialState, action) {
@@ -26,6 +25,5 @@ const vacanciesReducer = function (state = initialState, action) {
       return state;
   }
 };
-
 
 export default vacanciesReducer;

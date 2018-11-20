@@ -1,7 +1,7 @@
 @import './../../css/variables.scss';
 
 .collage {
-  padding: 65px 0;
+  padding: 70px 0 115px;
 
   &-list {
     width: 100%;
@@ -88,6 +88,12 @@
     display: block;
     padding: 2px;
     object-fit: cover;
+    transition: .5s;
+
+    &:hover {
+      opacity: .7;
+      cursor: pointer;
+    }
   }
 }
 

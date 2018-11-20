@@ -4,7 +4,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 50px 0 200px;
+  padding: 40px 0 80px;
   width: 100%;
   max-width: $large;
   transition: 1s;
@@ -13,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 0 80px;
 
     li {
       width: calc(50% - 2em);
@@ -30,31 +31,9 @@
         height: 100%;
 
         &:hover {
-          animation: shake .4s cubic-bezier(.36,.07,.19,.97) both;
-          transform: translate3d(0, 0, 0);
-          backface-visibility: hidden;
-          perspective: 1000px;
           border: 2px solid #ccc;
           background: $white;
           cursor: pointer;
-        }
-        
-        @keyframes shake {
-          10% {
-            transform: translate3d(10px, 0, 0);
-          }
-          
-          30% {
-            transform: translate3d(0, 2px, 0);
-          }
-        
-          50% {
-            transform: translate3d(0, -2px, 0);
-          }
-        
-          90% {
-            transform: translate3d(1px, 0, 0);
-          }
         }
       }
     }
@@ -67,8 +46,10 @@
   }
   
   &-desc {
+    font-size: $font-x-medium;
+
     span {
-      font-size: $font-xx-small;
+      font-size: .75em;
       color: $grey;
       margin-bottom: 5px;
       display: inline-block;
@@ -76,13 +57,12 @@
     }
 
     h5 {
-      font-size: $font-x-medium;
       font-weight: 500;
       margin-bottom: 2px;
     }
 
     p {
-      font-size: $font-x-small;
+      font-size: .75em;
       color: $grey;
       margin-bottom: 0;
     }

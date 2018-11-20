@@ -12,9 +12,9 @@ class Collage extends Component {
 
   render() {
     const {collage} = this.props.collage;
-    let temparray = [];
+    let sortedCollage = [];
     for (let i=0; i<collage.length; i+=3) {
-      temparray.push(collage.slice(i,i+3))
+      sortedCollage.push(collage.slice(i,i+3))
     }
 
     return (

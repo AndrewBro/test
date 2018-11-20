@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import footerBg from './../../images/footer.png';
 import './footer.scss';
 
 
