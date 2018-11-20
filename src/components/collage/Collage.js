@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import connect from "react-redux/es/connect/connect";
+import connect from 'react-redux/es/connect/connect';
 import { fetchCollageAction } from './../../store/actions/fetchCollageAction';
 import './collage.scss';
 
@@ -11,9 +11,9 @@ class Collage extends Component {
 
   render() {
     const {collage} = this.props.collage;
-    let temparray = [];
+    let sortedCollage = [];
     for (let i=0; i<collage.length; i+=3) {
-      temparray.push(collage.slice(i,i+3))
+      sortedCollage.push(collage.slice(i,i+3))
     }
 
     return (
@@ -21,12 +21,12 @@ class Collage extends Component {
         <h2 className='collage-title section-title'>Inside company</h2>
         <div className='collage-list'>
           {
-            temparray.map((el, i) => {
+            sortedCollage.map((el, i) => {
               return <div key={i} className='collage-wrap'>
-                  <div className="collage-item-top">
+                  <div className='collage-item-top'>
                     <img src={el[0].url} alt='' className='collage-item collage-item-1'/>
                   </div>
-                <div className="collage-item-bottom">
+                <div className='collage-item-bottom'>
                   <img src={el[1].url} alt='' className='collage-item collage-item-2'/>
                   <img src={el[2].url} alt='' className='collage-item collage-item-3'/>
                 </div>

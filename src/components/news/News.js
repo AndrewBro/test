@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {fetchPostsAction} from "../../store/actions/fetchPostsAction";
+import {fetchPostsAction} from '../../store/actions/fetchPostsAction';
 import './news.scss';
 
 class News extends Component {
@@ -34,7 +34,7 @@ class News extends Component {
                           <div className='post-description'>{post.body}</div>
 
                           <div className='post-more'>
-                            <a>More</a>  
+                            <span>More</span>
                           </div> 
                         </a>
                       </li>
@@ -42,11 +42,11 @@ class News extends Component {
                   })
                 }
               </ul> :
-              <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <div className='lds-roller'><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           }
-        <div className="more-posts more">
+        <div className='more-posts more'>
           <button onClick={this.morePosts}
-            className="button">
+            className='button'>
             <span>More News </span>
           </button>
         </div>

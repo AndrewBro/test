@@ -1,6 +1,38 @@
 @import './normalize.scss';
 @import './variables.scss';
 
+@font-face {
+  font-family: 'MuseoSansCyrl-700';
+  src: url('./../fonts/MuseoSansCyrl-700.eot');
+  src: url('./../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+       url('./../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+       url('./../fonts/MuseoSansCyrl-700.woff') format('woff'),
+       url('./../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl-500';
+  src: url('./../fonts/MuseoSansCyrl-500.eot');
+  src: url('./../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+       url('./../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+       url('./../fonts/MuseoSansCyrl-500.woff') format('woff'),
+       url('./../fonts/MuseoSansCyrl-500.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl-300';
+  src: url('./../fonts/MuseoSansCyrl-300.eot');
+  src: url('./../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+       url('./../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+       url('./../fonts/MuseoSansCyrl-300.woff') format('woff'),
+       url('./../fonts/MuseoSansCyrl-300.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
 
 .App {
   overflow: hidden;
@@ -13,7 +45,8 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-bottom: 47px;
+  margin-bottom: 55px;
+  padding: 0 1em;
 }
 
 .button {
@@ -24,9 +57,8 @@
   text-transform: uppercase;
   padding: 10px 40px;
   z-index: 1;
-
   text-align: center;
-  transition: all 0.5s;
+  transition: all .5s;
   cursor: pointer;
   margin: 5px;
 }
