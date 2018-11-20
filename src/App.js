@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <ReactCSSTransitionGroup
-          transitionName='example'
+          transitionName='appLoad'
           transitionAppear={true}
           transitionAppearTimeout={1000}
           transitionEnter={false}
