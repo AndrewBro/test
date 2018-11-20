@@ -1,0 +1,8 @@
+.appLoad-appear {
+  opacity: 0.5;
+}
+
+.appLoad-appear.appLoad-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}

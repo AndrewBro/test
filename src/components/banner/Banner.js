@@ -11,14 +11,13 @@ import banner from './../../images/banner.png';
 class Banner extends Component {
   render() {
     return (
-      <section className='banner'>
-        <img src={banner} alt='banner' className='banner-img' />
-        <div className='banner-content'>
-
-          <div className='banner-header'>
-            <div className='banner-nav'>
-              <a href='https://www.google.com.ua' className='banner-logo'>
-                <img src={layers} alt='logo' />
+      <section className="banner">
+        <img src={banner} alt="banner" className='banner-img' />
+        <div className="banner-content">
+          <div className="banner-header">
+            <div className="banner-nav">
+              <a href="https://www.google.com.ua" className="banner-logo">
+                <img src={layers} alt="logo" />
               </a>
               <Burger />
             </div>
