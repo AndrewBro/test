@@ -12,10 +12,8 @@ class Collage extends Component {
 
   render() {
     const {collage} = this.props.collage;
-    let sortedCollage = [];
-    for (let i=0; i<collage.length; i+=3) {
-      sortedCollage.push(collage.slice(i,i+3))
-    }
+
+    console.log(collage)
 
     return (
       <ReactCSSTransitionGroup
@@ -28,7 +26,7 @@ class Collage extends Component {
           <h2 className='collage-title section-title'>Inside company</h2>
           <div className='collage-list'>
             {
-              sortedCollage.map((el, i) => {
+              collage.map((el, i) => {
                 return <div key={i} className='collage-wrap'>
                     <div className="collage-item-top">
                       <img src={el[0].url} alt='' className='collage-item collage-item-1'/>

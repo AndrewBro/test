@@ -14,10 +14,14 @@ const collageReducer = function (state = initialState.collage, action) {
         isLoadedPosts: false
       };
     case FETCH_COLLAGE_SUCCESS:
+      let sortedCollage = [];
+      for (let i=0; i<action.collage.length; i+=3) {
+        sortedCollage.push(action.collage.slice(i,i+3))
+      }
       return {
         ...state,
         isLoadedPosts: true,
-        collage: action.collage
+        collage: sortedCollage
       };
     case FETCH_COLLAGE_FAIL:
       return {
@@ -29,6 +33,5 @@ const collageReducer = function (state = initialState.collage, action) {
       return state;
   }
 };
-
 
 export default collageReducer;
