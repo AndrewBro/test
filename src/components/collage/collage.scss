@@ -91,3 +91,11 @@
   }
 }
 
+.collageLoad-appear {
+  opacity: 0.7;
+}
+
+.collageLoad-appear.collageLoad-appear-active {
+  opacity: 1;
+  transition: opacity 5s ease-in;
+}

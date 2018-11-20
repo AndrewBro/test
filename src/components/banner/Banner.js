@@ -14,7 +14,6 @@ class Banner extends Component {
       <section className="banner">
         <img src={banner} alt="banner" className='banner-img' />
         <div className="banner-content">
-
           <div className="banner-header">
             <div className="banner-nav">
               <a href="https://www.google.com.ua" className="banner-logo">
