@@ -1,5 +1,3 @@
-# Test work for Plarium 
-
 Install dependencies:  
 ```sh
 $ npm install
